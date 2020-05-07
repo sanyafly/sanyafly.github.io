@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>dodopizza-vk</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="app">
+		<a href="/" class="logo">
+			<img src="./img/logo.svg" alt="">
+		</a>
+		<div class="main">
+			<div class="main__container">
+				<h1 class="main__title">Купон на две бесплатные пиццы</h1>
+				<div class="coupon">
+					<input class="coupon__input" type="text" id="coupon-input" value="4432890410719607" readonly>
+					<p class="coupon__text">
+						Не надо копировать. <br>
+						Сам указывается <a href="https://dodopizza31.tumblr.com" style="color: rgba(0,0,0,0.6); text-decoration: underline;">на сайте</a>
+					</p>
+				</div>
+				<div class="main__buttons">
+					<a href="https://dodopizza31.tumblr.com" class="btn btn-primary" target="_blank">Перейти на сайт</a>
+					<a href="https://dodopizza31.tumblr.com" class="btn btn-secondary" target="_blank">Активация с доставкой</a>
+				</div>
+			</div>
+		</div>
+		<p class="description">
+			Данный купон на 500 активаций. <b>ОСТАЛОСЬ: 57</b><br>
+			Приглашайте друзей, получайте больше пиццы
+		</p>
+	</div>
+
+	<script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
+
+    <script>
+        // Sends event to client
+        vkBridge.send('VKWebAppInit');
+    </script> 
+</body>
+</html>
